@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Button } from './Button';
-import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 function Navbar() {
@@ -9,6 +7,8 @@ function Navbar() {
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
+
+
 
   const showButton = () => {
     if (window.innerWidth <= 960) {
@@ -24,53 +24,61 @@ function Navbar() {
 
   window.addEventListener('resize', showButton);
 
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    const navbarHeight = document.querySelector('.navbar').offsetHeight;
+    if (element) {
+      const elementRect = element.getBoundingClientRect();
+      const absoluteElementTop = elementRect.top + window.pageYOffset;
+      const scrollToPosition = absoluteElementTop - navbarHeight;
+      window.scrollTo({
+        top: scrollToPosition,
+        behavior: 'smooth',
+      });
+    }
+    closeMobileMenu();
+  };
+
   return (
     <>
       <nav className='navbar'>
         <div className='navbar-container'>
-          <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            TRVL
-            <i class='fab fa-typo3' />
-          </Link>
+          <div
+            className='navbar-logo'
+            onClick={() => scrollToSection('home')}
+          >
+            JADA
+            <img className='fab fa-typo3' src='images/logo-mini-white.png' alt='Logo' />
+          </div>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
-              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                Home
-              </Link>
+              <div
+                className='nav-links'
+                onClick={() => scrollToSection('home')}
+              >
+                Domov
+              </div>
             </li>
             <li className='nav-item'>
-              <Link
-                to='/services'
+              <div
                 className='nav-links'
-                onClick={closeMobileMenu}
+                onClick={() => scrollToSection('services')}
               >
-                Services
-              </Link>
+                Služby
+              </div>
             </li>
             <li className='nav-item'>
-              <Link
-                to='/products'
+              <div
                 className='nav-links'
-                onClick={closeMobileMenu}
+                onClick={() => scrollToSection('contact')}
               >
-                Products
-              </Link>
-            </li>
-
-            <li>
-              <Link
-                to='/sign-up'
-                className='nav-links-mobile'
-                onClick={closeMobileMenu}
-              >
-                Sign Up
-              </Link>
+                Kontakt
+              </div>
             </li>
           </ul>
-          {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
         </div>
       </nav>
     </>

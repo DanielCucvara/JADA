@@ -1,0 +1,38 @@
+.comparisonContainer {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  min-width: 400px;
+  height: 200px;
+  margin-bottom: 40px;
+  border: 4px solid black;
+  box-shadow: 0 15px 30px rgba(56, 125, 255, 0.17);
+  -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+}
+  
+  .beforeDiv,
+  .afterDiv {
+    width: 50%;
+    position: relative;
+    height: 100%;
+  }
+  
+  .beforePic,
+  .afterPic {
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .beforeDiv p,
+  .afterDiv p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+  }
+  
