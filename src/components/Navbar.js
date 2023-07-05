@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Navbar.css';
+import LogoMiniWhite from '../images/logo-mini-white.png'
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -48,7 +49,7 @@ function Navbar() {
             onClick={() => scrollToSection('home')}
           >
             JADA
-            <img className='fab fa-typo3' src='images/logo-mini-white.png' alt='Logo' />
+            <img className='fab fa-typo3' src={LogoMiniWhite} alt='Logo' />
           </div>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />

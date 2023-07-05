@@ -1,7 +1,8 @@
 {
   "name": "jada",
+  "type": "module",
+  "homepage": "./",
   "version": "0.1.0",
-  "homepage": "https://danielcucvara.github.io/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",

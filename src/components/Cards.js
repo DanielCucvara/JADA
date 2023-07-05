@@ -1,6 +1,9 @@
 import React from 'react';
 import './Cards.css';
 import CardItem from './CardItem';
+import Pavement from '../images/pavement.jpg'
+import Wall from '../images/wall.jpg'
+import Stairs from '../images/stairs.jpg'
 
 function Cards() {
   return (
@@ -10,17 +13,17 @@ function Cards() {
         <div className='cards__wrapper'>
           <ul className='cards__items'>
             <CardItem
-              src='images/pavement.jpg'
+              src={Pavement}
               text='Čistenie dlažby'
               path='/services'
             />
             <CardItem
-              src='images/wall.jpg'
+              src={Wall}
               text='Čistenie múrikov'
               path='/services'
             />
             <CardItem
-              src='images/stairs.jpg'
+              src={Stairs}
               text='Čistenie schodištia'
               path='/services'
             />
