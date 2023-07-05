@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/jada/static/css/main.35de6a61.chunk.css",
+    "main.js": "/jada/static/js/main.8a4744b1.chunk.js",
+    "main.js.map": "/jada/static/js/main.8a4744b1.chunk.js.map",
+    "runtime-main.js": "/jada/static/js/runtime-main.11ebd167.js",
+    "runtime-main.js.map": "/jada/static/js/runtime-main.11ebd167.js.map",
+    "static/js/2.45477349.chunk.js": "/jada/static/js/2.45477349.chunk.js",
+    "static/js/2.45477349.chunk.js.map": "/jada/static/js/2.45477349.chunk.js.map",
+    "index.html": "/jada/index.html",
+    "precache-manifest.6a6be7811f6fc37ef1e1d07cd4c8850a.js": "/jada/precache-manifest.6a6be7811f6fc37ef1e1d07cd4c8850a.js",
+    "service-worker.js": "/jada/service-worker.js",
+    "static/css/main.35de6a61.chunk.css.map": "/jada/static/css/main.35de6a61.chunk.css.map",
+    "static/js/2.45477349.chunk.js.LICENSE.txt": "/jada/static/js/2.45477349.chunk.js.LICENSE.txt",
+    "static/media/HeroSection.css": "/jada/static/media/background.0f40ff14.jpg",
+    "static/media/fenceAfter.png": "/jada/static/media/fenceAfter.8648b847.png",
+    "static/media/fenceBefore.png": "/jada/static/media/fenceBefore.e8829d6d.png",
+    "static/media/logo-mini-white.png": "/jada/static/media/logo-mini-white.319888d7.png",
+    "static/media/logo.png": "/jada/static/media/logo.ec755a4d.png",
+    "static/media/pavement.jpg": "/jada/static/media/pavement.00ee13b5.jpg",
+    "static/media/pavementAfter.png": "/jada/static/media/pavementAfter.d6cea430.png",
+    "static/media/pavementBefore.png": "/jada/static/media/pavementBefore.031aeae8.png",
+    "static/media/stairs.jpg": "/jada/static/media/stairs.3950a534.jpg",
+    "static/media/wall.jpg": "/jada/static/media/wall.38370e3f.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.11ebd167.js",
+    "static/js/2.45477349.chunk.js",
+    "static/css/main.35de6a61.chunk.css",
+    "static/js/main.8a4744b1.chunk.js"
+  ]
+}
