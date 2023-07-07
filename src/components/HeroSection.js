@@ -7,8 +7,8 @@ import PavementBefore from '../images/pavementBefore.png'
 import PavementAfter from '../images/pavementAfter.png'
 import FenceBefore from '../images/fenceBefore.png'
 import FenceAfter from '../images/fenceAfter.png'
-import StairsBefore from '../images/fenceAfter.png'
-import StairsAfter from '../images/fenceAfter.png'
+import StairsBefore from '../images/stairsBefore.png'
+import StairsAfter from '../images/stairsAfter.png'
 import Logo from '../images/logo.png'
 
 function HeroSection() {
